@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+      {% block body_block %}
+
+      <h1>please enter the details in below form to update record about an employee</h1>
+      <form method="post">
+
+        {% csrf_token %}
+        Employee number:<input type="text" name="eno" value="{{employees.eno}}"><br><br>
+        Employee number:<input type="text" name="ename" value="{{employees.ename}}"><br><br>
+        Employee number:<input type="text" name="esal" value="{{employees.esal}}"><br><br>
+        Employee number:<input type="text" name="eaddr" value="{{employees.eaddr}}"><br><br>
+        <input type="submit" class="btn btn-primary btn-lg btn-success" value="update employee record">
+
+
+      </form>
+
+
+      {% endblock %}
